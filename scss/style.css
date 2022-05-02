@@ -1,0 +1,443 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+  max-height: 100%;
+  overflow-x: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+  max-height: 100%;
+  height: 100vh;
+  font-family: "Sora", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  background-color: #fff;
+}
+
+body {
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.app-container {
+  width: 100%;
+  height: auto;
+}
+
+.app-container .m-auto {
+  width: 100%;
+  height: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.app-container .m-auto .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.app-container .m-auto .header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.app-container .m-auto .header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.app-container .m-auto .header .menu p {
+  cursor: pointer;
+}
+
+.app-container .m-auto .header .menu p:hover {
+  color: #0f9afe;
+}
+
+.app-container .main {
+  width: 100%;
+  height: auto;
+  background-color: #eff8ff;
+}
+
+.app-container .main .working {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container .main .working-text {
+  display: block;
+}
+
+.app-container .main .working-text h2 {
+  width: 80%;
+  font-size: 2.4rem;
+  padding: 2rem 0;
+}
+
+.app-container .main .working-text button {
+  width: 200px;
+  height: 56px;
+  left: 135px;
+  top: 478px;
+  color: #fff;
+  background: #0f9afe;
+  -webkit-box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+          box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+  border-radius: 50px;
+}
+
+.app-container .main .working-text button:hover {
+  background: #0a6cb2;
+}
+
+.app-container .como-funciona {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.app-container .como-funciona .criar-conexoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4rem 2rem;
+}
+
+.app-container .como-funciona .criar-conexoes .items {
+  line-height: 2;
+}
+
+.app-container .como-funciona .criar-conexoes .items p {
+  width: 100%;
+}
+
+.app-container .download {
+  width: 100%;
+  background-color: #eff8ff;
+  padding: 2rem 0;
+}
+
+.app-container .download .m-auto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container .download .m-auto .detalhes {
+  width: 100%;
+}
+
+.app-container .download .m-auto .detalhes h3 {
+  font-size: 2.2rem;
+  padding: 2rem 0;
+}
+
+.app-container .download .m-auto .detalhes p {
+  color: #6e7275;
+  font-weight: 400;
+  width: 70%;
+}
+
+.app-container .download .m-auto .social {
+  width: 100%;
+  padding: 3rem 0;
+  gap: 4rem;
+}
+
+.app-container .planos {
+  width: 100%;
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.app-container .planos-title {
+  width: 100%;
+  padding: 2rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container .planos-title h3 {
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+.app-container .planos-title span {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #6e7275;
+}
+
+.app-container .planos-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.app-container .planos-card .card-bronze {
+  height: auto;
+  padding: 4rem;
+  background: #eff8ff;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container .planos-card .card-bronze .preco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #293145;
+}
+
+.app-container .planos-card .card-bronze .preco span {
+  font-size: 2rem;
+}
+
+.app-container .planos-card .card-bronze p {
+  font-size: 1.1rem;
+  color: #6e7275;
+  padding-bottom: 2rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.app-container .planos-card .card-bronze button {
+  width: 230px;
+  height: 43px;
+  color: #fff;
+  background: #0f9afe;
+  -webkit-box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+          box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+  border-radius: 50px;
+}
+
+.app-container .planos-card .card-bronze button:hover {
+  background: #0a6cb2;
+}
+
+.app-container .planos-card .card-prata {
+  height: auto;
+  padding: 3rem 4rem;
+  background-color: #293145;
+  color: #fff;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app-container .planos-card .card-prata .favorito {
+  background: #0f9afe;
+  padding: 0.1rem 1.5rem;
+  border-radius: 1.5rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.app-container .planos-card .card-prata .preco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.app-container .planos-card .card-prata .preco span {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.app-container .planos-card .card-prata .descricao {
+  font-size: 1.1rem;
+  color: #dbdbdb;
+  padding-bottom: 2rem;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.app-container .planos-card .card-prata button {
+  width: 230px;
+  height: 43px;
+  color: #fff;
+  background: #0f9afe;
+  -webkit-box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+          box-shadow: 1px 3px 4px rgba(19, 125, 224, 0.5);
+  border-radius: 50px;
+}
+
+.app-container .planos-card .card-prata button:hover {
+  background: #0a6cb2;
+}
+
+.app-container .contacto {
+  width: 100%;
+  padding: 2rem 0;
+  background-position: center;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(41, 49, 69, 0.7))), url("../assets/back.png");
+  background-image: linear-gradient(rgba(41, 49, 69, 0.7) 0%), url("../assets/back.png");
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.app-container .contacto .m-auto {
+  text-align: center;
+}
+
+.app-container .contacto .m-auto .contacto-text {
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.app-container .contacto .m-auto .contacto-text h2 {
+  font-weight: 600;
+  padding-bottom: 1.5rem;
+}
+
+.app-container .contacto .m-auto .contacto-text p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #dbdbdb;
+  font-size: 1.5rem;
+}
+
+.app-container .contacto .m-auto .contacto-form {
+  width: 100%;
+  padding: 6rem;
+  margin-left: 12rem;
+}
+
+.app-container .contacto .m-auto .contacto-form .form {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.app-container .contacto .m-auto .contacto-form .form input[type="text"] {
+  width: 50%;
+  padding: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.app-container .contacto .m-auto .contacto-form .form button {
+  width: 118px;
+  height: 38px;
+  color: #fff;
+  background: #0f9afe;
+  border-radius: 50px;
+}
+
+.app-container .contacto .m-auto .contacto-form .form button:hover {
+  background: #0a6cb2;
+}
+
+.app-container .footer {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.app-container .footer a {
+  text-decoration: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
