@@ -84,7 +84,12 @@ button {
   cursor: pointer;
 }
 
-.app-container .m-auto .header .menu p:hover {
+.app-container .m-auto .header .menu p a {
+  text-decoration: none;
+  color: #6E7275;
+}
+
+.app-container .m-auto .header .menu p a:hover {
   color: #0f9afe;
 }
 

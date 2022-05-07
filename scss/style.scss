@@ -59,8 +59,12 @@ button {
         gap: 3rem;
         p {
           cursor: pointer;
-          &:hover {
-            color: #0f9afe;
+          a {
+            text-decoration: none;
+            color: #6E7275;
+            &:hover {
+              color: #0f9afe;
+            }
           }
         }
       }
@@ -322,9 +326,9 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   a {
-  text-decoration: none;
-  cursor: pointer;
-}
+    a {
+      text-decoration: none;
+      cursor: pointer;
+    }
   }
 }
