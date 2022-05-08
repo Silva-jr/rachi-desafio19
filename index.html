@@ -34,8 +34,8 @@
                 </header>
             </div>
 
-            <section class="main">
-                <div class="working m-auto">
+            <section class="main reveal">
+                <div class="working m-auto ">
                     <div class="working-text">
                         <h2>
                             Rachi,<br>
@@ -51,7 +51,7 @@
 
             </section>
 
-            <section class="como-funciona m-auto" id="funcionalidade">
+            <section class="como-funciona m-auto reveal" id="funcionalidade">
                 <h2 class="title">Como Funciona</h2>
                 <div class="criar-conexoes">
                     <div class="items">
@@ -75,7 +75,7 @@
                 </div>
             </section>
 
-            <div id="app" class="download">
+            <section id="app" class="download reveal">
                 <div class="m-auto">
                     <div class="detalhes">
                         <h3>Baixe nosso app para desfrutar mais!</h3>
@@ -90,9 +90,9 @@
                         <img src="./assets/men-midia.png" alt="">
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <section class="planos m-auto" id="planos">
+            <section class="planos m-auto reveal" id="planos">
                 <div class="planos-title">
                     <h3>Nossos Planos</h3>
                     <span>
@@ -141,7 +141,7 @@
                 </div>
             </section>
 
-            <section class="contacto" id="contatos">
+            <section class="contacto reveal" id="contatos">
                 <div class="m-auto">
                     <div class="contacto-text">
                         <h2>Contato</h2>
@@ -172,7 +172,7 @@
                 wait: '1s',
                 move: '2opx'
             });
-            sr.reveal('.items, .working,.como-funciona', { delay: 500, origin: 'bottom' });            
+            sr.reveal('.reveal', { delay: 500, origin: 'left' });            
         </script>
     </body>
 
