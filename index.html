@@ -34,7 +34,7 @@
                 </header>
             </div>
 
-            <section class="main reveal">
+            <section class="main reveal-left">
                 <div class="working m-auto ">
                     <div class="working-text">
                         <h2>
@@ -51,7 +51,7 @@
 
             </section>
 
-            <section class="como-funciona m-auto reveal" id="funcionalidade">
+            <section class="como-funciona m-auto reveal-rigth" id="funcionalidade">
                 <h2 class="title">Como Funciona</h2>
                 <div class="criar-conexoes">
                     <div class="items">
@@ -75,7 +75,7 @@
                 </div>
             </section>
 
-            <section id="app" class="download reveal">
+            <section id="app" class="download reveal-left">
                 <div class="m-auto">
                     <div class="detalhes">
                         <h3>Baixe nosso app para desfrutar mais!</h3>
@@ -92,7 +92,7 @@
                 </div>
             </section>
 
-            <section class="planos m-auto reveal" id="planos">
+            <section class="planos m-auto reveal-rigth" id="planos">
                 <div class="planos-title">
                     <h3>Nossos Planos</h3>
                     <span>
@@ -141,7 +141,7 @@
                 </div>
             </section>
 
-            <section class="contacto reveal" id="contatos">
+            <section class="contacto reveal-left" id="contatos">
                 <div class="m-auto">
                     <div class="contacto-text">
                         <h2>Contato</h2>
@@ -172,7 +172,8 @@
                 wait: '1s',
                 move: '2opx'
             });
-            sr.reveal('.reveal', { delay: 500, origin: 'left' });            
+            sr.reveal('.reveal-left', { delay: 500, origin: 'left' });            
+            sr.reveal('.reveal-rigth', { delay: 500, origin: 'rigth' });            
         </script>
     </body>
 
